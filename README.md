@@ -39,5 +39,15 @@ Before running the pipeline, ensure the following prerequisites are completed:
 
 ## Getting Started:
 
-To get started with the Notebook Promotion Pipeline, simply configure the pipeline parameters to match your environment settings and deployment preferences. Once configured, trigger the pipeline manually or automate it to run on commits.
+To get started with the Notebook Promotion Pipeline, simply configure the pipeline parameters to match your environment settings and deployment preferences. Once configured, trigger the pipeline manually or automate it to run on commits. Pramameter values are read from ADO Environment variables.
+Pipeline parameters are read from an Azure DevOps Variable Group. Create a variable group and define variables to store the following information:
+
+- Resource Group Name(s)
+- Azure DevOps Service Agent Name
+- Azure DevOps Environment Names: One for each deployment environment
+- Service Principal ID
+- Service Principal Secret: Store the service principal secret value with type 'Secret'.
+
+![Variable Group Example](image_url)
+
 
