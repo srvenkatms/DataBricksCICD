@@ -59,7 +59,10 @@ Pipeline parameters are read from an Azure DevOps Variable Group. Create a varia
 - Service Principal ID
 - Service Principal Secret: Store the service principal secret value with type 'Secret'.
 
-![Variable Group Example](ADOEnv.png
-)
+![Variable Group Example](ADOEnv.png)
+
+
+
+
 
 
