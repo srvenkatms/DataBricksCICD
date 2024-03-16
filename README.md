@@ -1,4 +1,4 @@
-# DataBricksCICD
+v# DataBricksCICD
 Devops pipeline for Databricks
 # Introduction to Notebook Promotion Pipeline
 
@@ -48,6 +48,7 @@ Pipeline parameters are read from an Azure DevOps Variable Group. Create a varia
 - Service Principal ID
 - Service Principal Secret: Store the service principal secret value with type 'Secret'.
 
-![Variable Group Example](image_url)
+![Variable Group Example](ADOEnv.png
+)
 
 
