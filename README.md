@@ -36,6 +36,7 @@ Before running the pipeline, ensure the following prerequisites are completed:
   ````bash
 az ad sp create-for-rbac --name databricksp
 
+
 Note: Replace `databricksp` with the desired name for your service principal.
 
 
