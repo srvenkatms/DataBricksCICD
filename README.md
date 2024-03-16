@@ -22,8 +22,22 @@ Welcome to the Notebook Promotion Pipeline! This pipeline streamlines the proces
 
 - **Promotion Stages:** Consists of one or more stages representing the target environments (e.g., staging, production). Each stage deploys the notebooks to the respective environment, following the defined deployment strategy.
 
+# Prerequisites for Running the Pipeline
+
+Before running the pipeline, ensure the following prerequisites are completed:
+
+## Databricks Provisioning
+
+- **Databricks Environment:** Databricks needs to be provisioned and configured properly. The pipeline is designed to work with two Databricks environments. These environments can be hosted within the same resource group or in different resource groups.
+
+## Service Principal Configuration
+
+- **Service Principal:** A service principal with appropriate permissions is required to access the Databricks workspace. Ensure that the service principal is created and has the necessary permissions to interact with the Databricks environment.
+
+
 
 
 ## Getting Started:
 
-To get started with the Notebook Promotion Pipeline, simply configure the pipeline parameters to match your environment settings and deployment preferences. Once configured, trigger the pipeline manually or automate it to run on specific events such as code commits or scheduled intervals.
+To get started with the Notebook Promotion Pipeline, simply configure the pipeline parameters to match your environment settings and deployment preferences. Once configured, trigger the pipeline manually or automate it to run on commits.
+
