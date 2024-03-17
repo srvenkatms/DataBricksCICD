@@ -33,7 +33,7 @@ Before running the pipeline, ensure the following prerequisites are completed:
 ## Service Principal Configuration
 
 - **Service Principal:** A service principal with appropriate permissions is required to access the Databricks workspace. Ensure that the service principal is created and has the necessary permissions to interact with the Databricks environment.
-  ````bash
+  ```bash
 az ad sp create-for-rbac --name databricksp
 
 
