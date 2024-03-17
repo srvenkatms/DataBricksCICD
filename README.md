@@ -77,7 +77,11 @@ Configure Service Princiapl as a user and assign roles
 
 
 
+## Databricks Repo Configuration
 
+- Steps to configure Databricks repo configuration with ADO Devops is not covered .
+- After pipeline successful run, Notebooks will be deployed to a folder called 'Live' 
+'![Variable Example](livefolder.png)'
 
 ## Getting Started:
 
