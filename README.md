@@ -116,9 +116,10 @@ On Successful run of pipline , will result in promoting the notebooks from the m
 '![Deployment Stages](prodlive.png)'  
 
 ## Additional Notes
-I have to provide explicit owner access to resourcegrouap as a owner role
+- I have to provide explicit owner access to resourcegrouap as a owner role
 '![Deployment Stages](resourcegrouproleassignment.png)'  
 
+- Single Variables group is used for POC. it has variables for Dev and Prod. In ideal scenario, this can be broken per environments
 
 
 
