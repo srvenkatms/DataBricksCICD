@@ -52,7 +52,7 @@ az role assignment create --assignee 9e61579c-d1bb-4299-ba46-6db7e7cbbefc --role
 - Replace `9e61579c-d1bb-4299-ba46-6db7e7cbbefc` with the Service Principal's Application ID created in the previous step, and adjust the `--scope` parameter to match your specific Databricks workspace resource.
 Databricks 
 Once Service principal role assignment done successfully, head to Databricks cluster and launch Databricks workspce. Service  Principal have to be set with propert entitlements and add as well as an user 
-
+Select Admin profile 
 
 '![Variable Group Example](IdentityAndAccess01.png)'
 
