@@ -96,6 +96,9 @@ Pipeline parameters are read from an Azure DevOps Variable Group. Create a varia
 
 '![Variable Group Example](ADOEnv.png)'
 
+-## Define variable groups
+
+
 
 
 
