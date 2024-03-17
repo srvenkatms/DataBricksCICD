@@ -59,9 +59,10 @@ Once Service principal role assignment done successfully, head to Databricks clu
 
 
 - Select Identity And Access and Service Principal
-- 
 
-'![Variable Group Example](IdentityAndAccess02.png)'  
+
+'![Variable Example](IdentityAndAccess02.png)'
+
 
 
 ## Getting Started:
