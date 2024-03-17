@@ -33,6 +33,7 @@ Before running the pipeline, ensure the following prerequisites are completed:
 ## Service Principal Configuration
 
 - **Service Principal:** A service principal with appropriate permissions is required to access the Databricks workspace. Ensure that the service principal is created and has the necessary permissions to interact with the Databricks environment.
+  
   ```bash
 az ad sp create-for-rbac --name databricksp  
 
@@ -42,14 +43,18 @@ az ad sp create-for-rbac --name databricksp
 Notedown or copy the response of sp create command.
 
 Next, assign the role of Owner to the service principal created in the previous step. The role assignment is need to access workspace.
-   ```bash
+
+
 az role assignment create --assignee 9e61579c-d1bb-4299-ba46-6db7e7cbbefc --role "Owner" --scope "/subscriptions/8eb3a86f-dd3a-4484-8026-f893a7e5e5ac/resourceGroups/ceidbdemo/providers/Microsoft.Databricks/workspaces/databricksdemoprod"
 
 
 
 - Replace `9e61579c-d1bb-4299-ba46-6db7e7cbbefc` with the Service Principal's Application ID created in the previous step, and adjust the `--scope` parameter to match your specific Databricks workspace resource.
+Databricks 
+Once Service principal role assignment done successfully, head to Databricks cluster and launch Databricks workspce. Service  Principal have to be set with propert entitlements and add as well as an user 
 
 
+'![Variable Group Example](ADOEnv.png)'
 
 ## Getting Started:
 
