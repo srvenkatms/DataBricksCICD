@@ -115,6 +115,12 @@ On Successful run of pipline , will result in promoting the notebooks from the m
 '![Deployment Stages](Devlive.png)'  
 '![Deployment Stages](prodlive.png)'  
 
+## Additional Notes
+I have to provide explicit owner access to resourcegrouap as a owner role
+'![Deployment Stages](resourcegrouproleassignment.png)'  
+
+
+
 
 
 
