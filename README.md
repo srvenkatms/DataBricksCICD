@@ -103,6 +103,8 @@ Pipeline parameters are read from an Azure DevOps Variable Group. Create a varia
 ## Successful Deployment:
 On Successful run of pipline , will result in promoting the notebooks from the main repository to Live folder of Dev and Prod instance of Databricks.
 '![Deployment Stages](stages.png)'  
+'![Deployment Stages](devlive.png)'  
+'![Deployment Stages](prodlive.png)'  
 
 
 
