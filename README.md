@@ -54,7 +54,7 @@ Databricks
 Once Service principal role assignment done successfully, head to Databricks cluster and launch Databricks workspce. Service  Principal have to be set with propert entitlements and add as well as an user 
 
 
-'![Variable Group Example](ADOEnv.png)'
+'![Variable Group Example](IdentityAndAccess01.png)'
 
 ## Getting Started:
 
