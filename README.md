@@ -98,7 +98,11 @@ Pipeline parameters are read from an Azure DevOps Variable Group. Create a varia
 
 -## Define variable groups
 
-'![Variable Group Example](variablegroup.png)'
+'![Variable Group Example](variablegroup.png)'  
+
+## Successful Deployment:
+On Successful run of pipline , will result in promoting the notebooks from the main repository to Live folder of Dev and Prod instance of Databricks.
+'![Deployment Stages](stages.png)'  
 
 
 
