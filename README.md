@@ -63,6 +63,18 @@ Once Service principal role assignment done successfully, head to Databricks clu
 
 '![Variable Example](IdentityAndAccess02.png)'  
 
+-You should find the service principal listed, as it holds the owner role for the workspace. Simply locate it through the search functionality and proceed to add it.
+
+
+'![Variable Example](IdentityAndAccess04.png)'  
+
+Assign Databricks Entitlements 
+
+'![Variable Example](IdentityAndAccess06.png)'  
+
+Configure Service Princiapl as a user and assign roles
+'![Variable Example](IdentityAndAccess07.png)'
+
 
 
 
