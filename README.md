@@ -44,7 +44,7 @@ Next, assign the role of Owner to the service principal created in the previous 
 
 ````bash
 az role assignment create --assignee 9e61579c-d1bb-4299-ba46-6db7e7cbbefc --role "Owner" --scope "/subscriptions/8eb3a86f-dd3a-4484-8026-f893a7e5e5ac/resourceGroups/ceidbdemo/providers/Microsoft.Databricks/workspaces/databricksdemoprod"
-```.
+```
 
 Replace `9e61579c-d1bb-4299-ba46-6db7e7cbbefc` with the Service Principal's Application ID created in the previous step, and adjust the `--scope` parameter to match your specific Databricks workspace resource.
 
