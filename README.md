@@ -61,19 +61,19 @@ Once Service principal role assignment done successfully, head to Databricks clu
 - Select Identity And Access and Service Principal
 
 
-'![Variable Example](IdentityAndAccess02.png)'  
+'![Variable Example](/images/IdentityAndAccess02.png)'  
 
 -You should find the service principal listed, as it holds the owner role for the workspace. Simply locate it through the search functionality and proceed to add it.
 
 
-'![Variable Example](IdentityAndAccess04.png)'  
+'![Variable Example](/images/IdentityAndAccess04.png)'  
 
 Assign Databricks Entitlements 
 
-'![Variable Example](IdentityAndAccess06.png)'  
+'![Variable Example](/images/IdentityAndAccess06.png)'  
 
 Configure Service Princiapl as a user and assign roles
-'![Variable Example](IdentityAndAccess07.png)'
+'![Variable Example](/images/IdentityAndAccess07.png)'
 
 
 
@@ -81,7 +81,7 @@ Configure Service Princiapl as a user and assign roles
 
 - Steps to configure Databricks repo configuration with ADO Devops is not covered .
 - After pipeline successful run, Notebooks will be deployed to a folder called 'Live' 
-'![Variable Example](livefolder.png)'
+'![Variable Example](/images/livefolder.png)'
 
 ## Getting Started:
 
@@ -94,11 +94,11 @@ Pipeline parameters are read from an Azure DevOps Variable Group. Create a varia
 - Service Principal ID
 - Service Principal Secret: Store the service principal secret value with type 'Secret'.
 
-'![Variable Group Example](ADOEnv.png)'
+'![Variable Group Example](/images/ADOEnv.png)'
 
 -## Define variable groups
 
-'![Variable Group Example](variablegroup.png)'  
+'![Variable Group Example](/images/variablegroup.png)'  
 ## Databricks Pipeline:
 Pipeline has 3 files - azure-pipelines.yml, databricks-token.ps1 and databricks-notebooks.yml
 - azure-pipelines.yml  
@@ -111,13 +111,13 @@ The provided YAML defines parameters for a deployment pipeline, including stageI
 
 ## Successful Deployment:
 On Successful run of pipline , will result in promoting the notebooks from the main repository to Live folder of Dev and Prod instance of Databricks.
-'![Deployment Stages](stages.png)'  
-'![Deployment Stages](Devlive.png)'  
-'![Deployment Stages](prodlive.png)'  
+'![Deployment Stages](/images/stages.png)'  
+'![Deployment Stages](/images/Devlive.png)'  
+'![Deployment Stages](/images/prodlive.png)'  
 
 ## Additional Notes
 - I have to provide explicit owner access to resourcegrouap as a owner role
-'![Deployment Stages](resourcegrouproleassignment.png)'  
+'![Deployment Stages](/images/resourcegrouproleassignment.png)'  
 
 - Single Variables group is used for POC. it has variables for Dev and Prod. In ideal scenario, this can be broken per environments
 
