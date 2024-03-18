@@ -21,7 +21,7 @@ Welcome to the Notebook Promotion Pipeline! This pipeline streamlines the proces
 - **Source Stage:** Fetches the notebooks from the source environment, typically the development environment, and triggers the deployment process.
 
 - **Promotion Stages:** Consists of one or more stages representing the target environments (e.g., staging, production). Each stage deploys the notebooks to the respective environment, following the defined deployment strategy.
-
+'![Variable Group Example](/images/flow.png)'  
 # Prerequisites for Running the Pipeline
 
 Before running the pipeline, ensure the following prerequisites are completed:
