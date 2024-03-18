@@ -1,0 +1,42 @@
+trigger:
+  - main
+
+variables:
+  - group: dbw-cicd
+
+  - name: vmImagename
+    value: "windows-latest"
+  - name: notebooksPath
+    value: ""
+
+pool:
+
+  vmimage: $(vmImageName)
+stages:
+
+- template: deploy-notebooks.yml
+  parameters:
+    stageId: "Deploy_to_Dev"
+    env: "Deploy to Dev"
+    environmentName: $(dev-environment-name)
+    resourceGroupName: $(dev-resource-group-name)
+    serviceConnection: $(dev-service-connection-name)
+    notebooksPath: $(notebooksPath)
+    spid: $(spid)
+    spkey: $(spkey)
+    workspaceName: "databricksdemodev"
+
+
+ 
+- template: deploy-notebooks.yml
+  parameters:
+    stageId: "Deploy_to_Prod"
+    env: "Deploy to Prod"
+    environmentName: $(prod-environment-name)
+    resourceGroupName: $(prod-resource-group-name)
+    serviceConnection: $(prod-service-connection-name)
+    notebooksPath: $(notebooksPath)
+    spid: $(spid)
+    spkey: $(spkey)
+    workspaceName: "databricksdemoprod"
+    dependsOn: "Deploy_to_Dev"
